@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: $background-color;
+    background: rgb(216, 174, 119);
     animation: fadeIn .5s ease;
 
     img {
@@ -18,7 +18,7 @@
 .loader {
     width: 100%;
     height: inherit;
-    background: $background-color-01;
+    background: rgb(201, 155, 96);
     position: relative;
     padding: $m-size;
     display: flex;
@@ -38,7 +38,7 @@
     animation: rotate 1s ease infinite;
 
     .fill-white {
-        fill: #fff;
+        fill:burlywood;
     }
 }
 

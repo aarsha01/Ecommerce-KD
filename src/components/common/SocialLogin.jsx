@@ -9,6 +9,7 @@ const SocialLogin = ({ isLoading }) => {
 
   const onSignInWithGoogle = () => {
     dispatch(signInWithGoogle());
+    console.log("im being called")
   };
 
   const onSignInWithFacebook = () => {

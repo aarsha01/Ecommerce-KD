@@ -33,13 +33,12 @@ const Home = () => {
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>See</strong>
-              &nbsp;everything with&nbsp;
-              <strong>Clarity</strong>
+              <strong>Crafted </strong>
+              &nbsp;with Passion&nbsp;
+              
             </h1>
             <p>
-              Buying eyewear should leave you happy and good-looking, with money in your pocket.
-              Glasses, sunglasses, and contacts—we’ve got your eyes covered.
+            Experience Artistry in Every Detail
             </p>
             <br />
             <Link to={SHOP} className="button">

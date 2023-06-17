@@ -1,7 +1,7 @@
 .button {
-  background: $button-color;
+  background: rgb(214, 163, 97);
   padding: $m-size;
-  border: 1px solid $button-color;
+  border: 1px solid rgb(214, 163, 97);
   color: $white;
   font-weight: bold;
   position: relative;
@@ -12,8 +12,9 @@
 
   &:hover {
     cursor: pointer;
-    background: $button-hover;
-    border: 1px solid $button-hover;
+    // background: $button-hover;
+    background: rgb(218, 150, 63);
+    border: 1px solid rgb(218, 150, 63);
     text-decoration: none;
   }
 }
@@ -30,7 +31,7 @@
 .button-link {
   @extend .button;
   background: none;
-  color: $black;
+  color: burlywood;
   border: none;
 
   &:hover {
@@ -41,12 +42,12 @@
 
 .button-muted {
   @extend .button;
-  background: $background-color-01;
+  background: white;
   color: lighten($paragraph-color, 20%);
   border: 1px solid $border-color;
 
   &:hover {
-    background: $background-color;
+    background: rgb(218, 150, 63);
     border: 1px solid $border-color-focus;
   }
 }
