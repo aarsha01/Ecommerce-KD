@@ -50,7 +50,7 @@ const OrderSummary = ({ basket, subtotal }) => {
             <ShopOutlined />
             &nbsp;
             Continue Shopping
-          </button>
+          </button>  
           <button
             className="button"
             onClick={onClickNext}

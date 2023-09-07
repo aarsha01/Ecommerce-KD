@@ -39,7 +39,7 @@ const FormSchema = Yup.object().shape({
 });
 
 const ShippingDetails = ({ profile, shipping, subtotal }) => {
-  useDocumentTitle('Check Out Step 2 | Salinaka');
+  useDocumentTitle('Check Out Step 2 | KDisk');
   useScrollTop();
   const dispatch = useDispatch();
   const history = useHistory();
@@ -95,14 +95,14 @@ const ShippingDetails = ({ profile, shipping, subtotal }) => {
                     &nbsp;
                     Go Back
                   </button>
-                  <button
+                  {/* <button
                     className="button button-icon"
                     type="submit"
                   >
                     Next Step
                     &nbsp;
                     <ArrowRightOutlined />
-                  </button>
+                  </button> */}
                 </div>
               </Form>
             )}
