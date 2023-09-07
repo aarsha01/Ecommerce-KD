@@ -5,7 +5,7 @@ import bannerImg from '@/images/village.jpg';
 import React from 'react';
 
 const FeaturedProducts = () => {
-  useDocumentTitle('Featured Products | Salinaka');
+  useDocumentTitle('Featured Products | KDisk');
   useScrollTop();
 
   const {

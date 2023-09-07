@@ -7,7 +7,7 @@ import { addProduct } from '@/redux/actions/productActions';
 
 const AboutPage = () => {
   useScrollTop();
-  useDocumentTitle('About Us | Salinaka');
+  useDocumentTitle('About Us | KDisk');
   const isLoading = useSelector((state) => state.app.loading);
   const dispatch = useDispatch();
 
