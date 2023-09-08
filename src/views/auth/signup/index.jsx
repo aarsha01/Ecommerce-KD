@@ -42,10 +42,12 @@ const SignUp = ({ history }) => {
   const onClickSignIn = () => history.push(SIGNIN);
 
   const onFormSubmit = (form) => {
+    console.log("hiiii")
     dispatch(signUp({
       fullname: form.fullname.trim(),
       email: form.email.trim().toLowerCase(),
       password: form.password.trim()
+     
     }));
   };
 
