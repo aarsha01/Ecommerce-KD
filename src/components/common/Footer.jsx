@@ -20,7 +20,8 @@ const Footer = () => {
         <img alt="Footer logo" className="footer-logo" src={logo} />
         <h5>
           &copy;&nbsp;
-          {new Date().getFullYear()}
+          {new Date().getFullYear()} , CIDRIE Lab, MITS
+
         </h5>
       </div>
       <div className="footer-col-3">
