@@ -11,7 +11,7 @@ import { StepTracker } from '../components';
 import withCheckout from '../hoc/withCheckout';
 
 const OrderSummary = ({ basket, subtotal }) => {
-  useDocumentTitle('Check Out Step 1 | Salinaka');
+  useDocumentTitle('Check Out Step 1 | KDisk');
   useScrollTop();
   const dispatch = useDispatch();
   const history = useHistory();
@@ -50,7 +50,7 @@ const OrderSummary = ({ basket, subtotal }) => {
             <ShopOutlined />
             &nbsp;
             Continue Shopping
-          </button>
+          </button>  
           <button
             className="button"
             onClick={onClickNext}

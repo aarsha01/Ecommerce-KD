@@ -2,6 +2,7 @@ import { useFormikContext } from 'formik';
 import { displayMoney } from '@/helpers/utils';
 import PropType from 'prop-types';
 import React from 'react';
+import qrcode from '@/images/qrcode_gpay.png';
 
 const ShippingTotal = ({ subtotal }) => {
   const { values } = useFormikContext();
@@ -18,7 +19,7 @@ const ShippingTotal = ({ subtotal }) => {
             </td>
             <td>
               <h4 className="basket-total-amount text-subtle text-right margin-0 ">
-                {values.isInternational ? '$50.00' : '$0.00'}
+                {values.isInternational ? 'Rs. 50.00' : 'Rs. 0.00'}
               </h4>
             </td>
           </tr>
@@ -48,6 +49,11 @@ const ShippingTotal = ({ subtotal }) => {
           </tr>
         </tbody>
       </table>
+
+      {/* QR image goes here ------------ */}
+      <div className="banner-img">
+        <img src={qrcode} alt="" />
+      </div>
     </div>
   );
 };

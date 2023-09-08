@@ -3,7 +3,7 @@ import {
   ON_AUTHSTATE_SUCCESS, RESET_PASSWORD,
   SET_AUTH_PERSISTENCE,
   SIGNIN, SIGNIN_WITH_FACEBOOK,
-  SIGNIN_WITH_GITHUB, SIGNIN_WITH_GOOGLE,
+  SIGNIN_WITH_GOOGLE,
   SIGNOUT, SIGNUP
 } from '@/constants/constants';
 import { SIGNIN as ROUTE_SIGNIN } from '@/constants/routes';
@@ -76,14 +76,14 @@ function* authSaga({ type, payload }) {
         yield handleError(e);
       }
       break;
-    case SIGNIN_WITH_GITHUB:
-      try {
-        yield initRequest();
-        yield call(firebase.signInWithGithub);
-      } catch (e) {
-        yield handleError(e);
-      }
-      break;
+    // case SIGNIN_WITH_GITHUB:
+    //   try {
+    //     yield initRequest();
+    //     yield call(firebase.signInWithGithub);
+    //   } catch (e) {
+    //     yield handleError(e);
+    //   }
+    //   break;
     case SIGNUP:
       try {
         yield initRequest();
